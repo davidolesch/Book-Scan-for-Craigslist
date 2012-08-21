@@ -139,7 +139,7 @@ dispatch_queue_t sideQueue;
 
 - (void)submitToAWS
 {
-    NSString *URLString = [[NSString alloc] initWithFormat:@"http://path/to/your/craigslist/API/?isbn=%@&email=%@&location=%@",isbn,email,city];//see SETUP.txt to set this up
+    NSString *URLString = [[NSString alloc] initWithFormat:@"http://path/to/your/craigslist/API/?isbn=%@&email=%@&location=%@",isbn,email,city];//see README.txt to set this up
     NSString *fileURLString = [URLString stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
     NSData *fileData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:fileURLString]];
     NSString *returnedFileContents=[[NSString alloc] initWithData:fileData encoding:NSASCIIStringEncoding];   

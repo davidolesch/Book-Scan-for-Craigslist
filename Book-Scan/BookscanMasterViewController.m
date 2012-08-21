@@ -105,7 +105,7 @@ dispatch_queue_t sideQueue;
 
 - (void)saveInformationForISBN:(NSString *)isbn toObject:(NSManagedObject *)obj inContext:(NSManagedObjectContext *)context
 {    
-    NSString *xmlBookInfoURLString = [[NSString alloc] initWithFormat:@"http://api.chegg.com/Buyback.svc?key....%@",[obj valueForKey:@"isbn13"]];//see SETUP.txt to set this up
+    NSString *xmlBookInfoURLString = [[NSString alloc] initWithFormat:@"http://api.chegg.com/Buyback.svc?key....%@",[obj valueForKey:@"isbn13"]];//see README.txt to set this up
     
     //fetch info from xmlBookInfoURL and set the values for obj.
     
